@@ -1,0 +1,157 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient-animation 8s ease infinite;
+  /* : 20px; */
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form {
+  border: 1px solid black;
+  padding: 0em 2.5em;
+  /* color: white; */
+  font-size: 1.1em;
+  background: white;
+  border-radius: 10px;
+}
+
+.form-heading {
+  text-align: center;
+  color: black;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  margin-left: 0.3em;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.input-field {
+  font-size: 0.8em;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  border-radius: none;
+  height: 1.2em;
+  padding: 15px 10px;
+}
+.input-field:focus,
+input:not(:placeholder-shown) {
+  display: block;
+  box-shadow: none;
+  outline: none;
+  animation: underline 0.5s linear;
+}
+
+.input-field::placeholder {
+  opacity: 0.5;
+  font-family: "Poppins", FontAwesome, sans-serif;
+}
+
+.forgot-password {
+  font-size: 0.8em;
+  text-align: right;
+  padding: 0.2em;
+  opacity: 0.7;
+}
+.forgot-password button {
+  border: none;
+  background: transparent;
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 0.8em;
+  padding: 0.8em 0em;
+  border-radius: 30px;
+  margin-top: 2em;
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.signup-heading {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.2em;
+  opacity: 0.7;
+  margin-top: 4em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.icon {
+  width: 2em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  /* cursor: pointer; */
+  border: none;
+}
+
+.fa-brands {
+  /* background-color: blue; */
+  font-size: 1em;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.twitter {
+  background-color: rgb(97, 190, 226);
+}
+
+.google {
+  background: red;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
