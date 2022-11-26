@@ -1,0 +1,50 @@
+body {
+  margin-top: 50%;
+  background-color: rgb(15, 17, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.btn {
+  background-color: rgb(35, 40, 36);
+
+  color: yellow;
+  font-family: "Poppins", sans-serif;
+  width: max-content;
+  height: auto;
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 1px solid rgb(35, 40, 36);
+  border-radius: 5px;
+  padding: 0.7em 1.5em;
+
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: yellow;
+  border: 1px solid rgb(35, 40, 36);
+  border-radius: 5px;
+
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  color: black;
+  background-color: transparent;
+  transform: translateY(-5px);
+}
+.btn:hover::before {
+  width: 100%;
+}
